@@ -1,8 +1,5 @@
 import { Match3 } from './Match3';
 import { Match3SpecialBlast } from './specials/Match3SpecialBlast';
-import { Match3SpecialColour } from './specials/Match3SpecialColour';
-import { Match3SpecialColumn } from './specials/Match3SpecialColumn';
-import { Match3SpecialRow } from './specials/Match3SpecialRow';
 import { match3GetMatches, Match3Position, Match3Type } from './Match3Utility';
 
 /** Interface for special handler */
@@ -25,11 +22,11 @@ export interface Match3SpecialHandlerConstructor {
 /** All available specials - handlers can be found inside `match3/specials/` folder */
 const availableSpecials: Record<string, Match3SpecialHandlerConstructor> = {
     /** Pops out the entire row */
-    'special-row': Match3SpecialRow,
+    'special-row': Match3SpecialBlast,
     /** Pops out the entire column */
-    'special-column': Match3SpecialColumn,
+    'special-column': Match3SpecialBlast,
     /** Pops out all pieces of a single type */
-    'special-colour': Match3SpecialColour,
+    'special-colour': Match3SpecialBlast,
     /** Pops out surrounding pieces */
     'special-blast': Match3SpecialBlast,
 };
