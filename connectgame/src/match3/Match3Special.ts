@@ -1,8 +1,5 @@
 import { Match3 } from './Match3';
 import { Match3SpecialBlast } from './specials/Match3SpecialBlast';
-import { Match3SpecialColour } from './specials/Match3SpecialColour';
-import { Match3SpecialColumn } from './specials/Match3SpecialColumn';
-import { Match3SpecialRow } from './specials/Match3SpecialRow';
 import { match3GetMatches, Match3Position, Match3Type } from './Match3Utility';
 
 /** Interface for special handler */
