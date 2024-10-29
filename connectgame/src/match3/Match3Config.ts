@@ -1,5 +1,5 @@
 /** List of all valid game modes */
-export const match3ValidModes = ['test', 'easy', 'normal', 'hard'] as const;
+export const match3ValidModes = ['test', 'supereasy', 'easy', 'normal', 'hard'] as const;
 
 /** The game mode type */
 export type Match3Mode = (typeof match3ValidModes)[number];
@@ -11,8 +11,9 @@ export type Match3Mode = (typeof match3ValidModes)[number];
 const blocks: Record<Match3Mode | 'special', string[]> = {
     /** Test mode piece set */
     test: ['piece-dragon', 'piece-frog', 'piece-newt'],
+    supereasy: ['piece-dragon', 'piece-frog', 'piece-newt'],
     /** Easy mode piece set */
-    easy: ['piece-dragon', 'piece-frog', 'piece-newt'],
+    easy: ['piece-dragon', 'piece-frog', 'piece-newt', 'piece-snake'],
     /** Normal mode piece set */
     normal: ['piece-dragon', 'piece-frog', 'piece-newt', 'piece-snake', 'piece-spider'],
     /** Hard mode piece set */
