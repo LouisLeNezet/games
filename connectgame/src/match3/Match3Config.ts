@@ -1,5 +1,5 @@
 /** List of all valid game modes */
-export const match3ValidModes = ['test', 'supereasy', 'easy', 'normal', 'hard'] as const;
+export const match3ValidModes = ['test', 'easy', 'normal', 'hard'] as const;
 
 /** The game mode type */
 export type Match3Mode = (typeof match3ValidModes)[number];
