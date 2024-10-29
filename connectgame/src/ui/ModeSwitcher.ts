@@ -10,6 +10,10 @@ type ItemConfig = { mode: Match3Mode; text: string };
 /** List of switcher items */
 const items: ItemConfig[] = [
     {
+        mode: 'supereasy',
+        text: i18n.supereasyMode,
+    },
+    {
         mode: 'easy',
         text: i18n.easyMode,
     },

@@ -30,6 +30,7 @@ export const i18n = {
     countdownGo: 'GO!',
     timesUp: 'Time’s up!',
     overtime: 'FINISHING',
+    supereasyMode: 'Super Easy Mode',
     easyMode: 'Easy Mode',
     normalMode: 'Normal Mode',
     hardMode: 'Hard Mode',
