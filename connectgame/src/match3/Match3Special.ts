@@ -25,11 +25,11 @@ export interface Match3SpecialHandlerConstructor {
 /** All available specials - handlers can be found inside `match3/specials/` folder */
 const availableSpecials: Record<string, Match3SpecialHandlerConstructor> = {
     /** Pops out the entire row */
-    'special-row': Match3SpecialRow,
+    'special-row': Match3SpecialBlast,
     /** Pops out the entire column */
-    'special-column': Match3SpecialColumn,
+    'special-column': Match3SpecialBlast,
     /** Pops out all pieces of a single type */
-    'special-colour': Match3SpecialColour,
+    'special-colour': Match3SpecialBlast,
     /** Pops out surrounding pieces */
     'special-blast': Match3SpecialBlast,
 };
