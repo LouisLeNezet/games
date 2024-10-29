@@ -52,7 +52,7 @@ export class Match3Stats {
      */
     public registerMatch(data: Match3OnMatchData) {
         for (const match of data.matches) {
-            const points = match.length + data.matches.length * data.combo;
+            const points = match.length + data.matches.length * data.combo * 10;
             this.data.score += points;
             this.data.matches += 1;
         }
@@ -70,7 +70,9 @@ export class Match3Stats {
         const pointsPerSecond = score / gameplayTimeInSecs;
 
         let grade = 0;
-        if (pointsPerSecond > avgPointsPerSecond * 2) {
+        if (pointsPerSecond > avgPointsPerSecond * 4) {
+            grade = 4;
+        } else if (pointsPerSecond > avgPointsPerSecond * 2) {
             grade = 3;
         } else if (pointsPerSecond > avgPointsPerSecond) {
             grade = 2;

@@ -5,6 +5,7 @@ export const i18n = {
     playButton: 'Start Game',
     resultTitle: 'Results',
     resultPlay: 'Play again',
+    grade4: 'You cheated ! Didn’t you?',
     grade3: 'Incredible!',
     grade2: 'Well Done!',
     grade1: 'Good!',
