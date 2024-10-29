@@ -12,7 +12,7 @@ const blocks: Record<Match3Mode | 'special', string[]> = {
     /** Test mode piece set */
     test: ['piece-dragon', 'piece-frog', 'piece-newt'],
     /** Easy mode piece set */
-    easy: ['piece-dragon', 'piece-frog', 'piece-newt', 'piece-snake'],
+    easy: ['piece-dragon', 'piece-frog', 'piece-newt'],
     /** Normal mode piece set */
     normal: ['piece-dragon', 'piece-frog', 'piece-newt', 'piece-snake', 'piece-spider'],
     /** Hard mode piece set */
