@@ -43,11 +43,20 @@ export class Match3SpecialRow {
         // Ignore if provided piece type does not match this special type
         if (pieceType !== this.pieceType) return;
 
-        const columns = this.match3.board.columns;
-        const list: Match3Position[] = [];
-        for (let i = 0; i < columns; i++) {
-            list.push({ row: position.row, column: i });
-        }
+        const list = [
+            { row: position.row - 2, column: position.column },
+            { row: position.row - 1, column: position.column - 1 },
+            { row: position.row - 1, column: position.column },
+            { row: position.row - 1, column: position.column + 1 },
+            { row: position.row, column: position.column - 2 },
+            { row: position.row, column: position.column - 1 },
+            { row: position.row, column: position.column + 1 },
+            { row: position.row, column: position.column + 2 },
+            { row: position.row + 1, column: position.column - 1 },
+            { row: position.row + 1, column: position.column },
+            { row: position.row + 1, column: position.column + 1 },
+            { row: position.row + 2, column: position.column },
+        ];
         await this.match3.board.popPieces(list, true);
     }
 }
